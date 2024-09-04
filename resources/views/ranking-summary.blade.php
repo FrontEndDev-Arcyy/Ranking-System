@@ -86,5 +86,48 @@
             </tfoot>
         </table>
     </div>
+<br>
+    <div class="signature-header">
+        <div class="prepared">
+            Prepared by:
+            <div class="line"></div>
+        </div>
+        <div class="date">
+            Date:
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="verified">
+        <div class="line"></div>
+        Verified and Reviewed by Rank and Tenure Committee
+    </div>
+
+    <div class="signatures">
+        <div class="signature">
+            <div class="line"></div>
+            Name & Signature of Member
+        </div>
+        <div class="signature">
+            <div class="line"></div>
+            Name & Signature of Member
+        </div>
+        <div class="signature">
+            <div class="line"></div>
+            Name & Signature of Chair
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            Approved by:
+            <div class="line"></div>
+            <div class="president">President</div>
+        </div>
+        <div>
+            Date:
+            <div class="line"></div>
+        </div>
+    </div>
 </body>
 </html>

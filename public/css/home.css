@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #2EA2F1;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -76,13 +76,14 @@ input[type="date"] {
     width: 30%;
 }
 
-
+.container, .second-container, .third-container, .fourth-container, .fifth-container, .sixth-container, .last-container {
+    background-color: white;
+}
 
 .container {
     max-width: 1500px; /* Increased from 800px */
     width: 95%; /* Added to ensure some margin on very wide screens */
     margin: 0 auto;
-    background-color: #2EA2F1;
     padding: 30px; /* Increased from 20px for more internal space */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -196,7 +197,6 @@ input[type="date"] {
     max-width: 1500px; /* Increased from 800px */
     width: 95%; /* Added to ensure some margin on very wide screens */
     margin: 0 auto;
-    background-color: #2EA2F1;
     padding: 30px; /* Increased from 20px for more internal space */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -283,17 +283,17 @@ input[type="date"] {
     padding: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #2EA2F1;
 }
 
 /* Styles for the table */
 .third-container table {
     width: 100%;
     border-collapse: collapse;
+    border: 2px solid black;
 }
 
 .third-container th, .third-container td {
-    border: 1px solid #ddd;
+    border: 1px solid black;
     padding: 8px;
     text-align: left;
 }
@@ -333,17 +333,17 @@ input[type="date"] {
     padding: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #2EA2F1;
 }
 
 /* Styles for the table */
 .fourth-container table {
     width: 100%;
     border-collapse: collapse;
+    border: 2px solid black;
 }
 
 .fourth-container th, .fourth-container td {
-    border: 1px solid #ddd;
+    border: 1px solid black;
     padding: 8px;
     text-align: left;
 }
@@ -382,17 +382,17 @@ input[type="date"] {
     padding: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #2EA2F1;
 }
 
 /* Styles for the table */
 .fifth-container table {
     width: 100%;
     border-collapse: collapse;
+    border: 2px solid black;
 }
 
 .fifth-container th, .fifth-container td {
-    border: 1px solid #ddd;
+    border: 1px solid black;
     padding: 8px;
     text-align: left;
 }
@@ -431,17 +431,17 @@ input[type="date"] {
     padding: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #2EA2F1;
 }
 
 /* Styles for the table */
 .sixth-container table {
     width: 100%;
     border-collapse: collapse;
+    border: 2px solid black;
 }
 
 .sixth-container th, .sixth-container td {
-    border: 1px solid #ddd;
+    border: 1px solid black;
     padding: 8px;
     text-align: left;
 }
@@ -476,21 +476,21 @@ input[type="date"] {
 .last-container {
     max-width: 1500px;
     width: 95%;
-    margin: 0 auto;
+    margin: auto auto 10px auto;
     padding: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #2EA2F1;
 }
 
 /* Styles for the table */
 .last-container table {
     width: 100%;
     border-collapse: collapse;
+    border: 2px solid black;
 }
 
 .last-container th, .last-container td {
-    border: 1px solid #ddd;
+    border: 1px solid black;
     padding: 8px;
     text-align: left;
 }
@@ -525,6 +525,7 @@ input[type="date"] {
 .done-btn {
     display: flex;
     justify-content: center;
+    margin: auto auto 10px auto;
 }
 
 #button {

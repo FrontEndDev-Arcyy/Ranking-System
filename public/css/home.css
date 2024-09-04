@@ -1,7 +1,30 @@
-* {
+body {
     background-color: white;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+    padding: 10px 20px;
+    background-color: #007BFF;
+}
+
+.site-header {
+    display: flex;           /* Flexbox for horizontal alignment */
+    align-items: center;     /* Vertically center logo and text */
+}
+
+.logo {
+    width: 50px;             /* Adjust logo size */
+    height: auto;            /* Maintain logo aspect ratio */
+    margin-right: 10px;      /* Space between logo and text */
+}
+
+.site-title {
+    color: black;          /* White text color */
+    font-size: 24px;         /* Font size */
+    margin: 0;               /* Remove default margin from h1 */
 }
 
 .nav-header {

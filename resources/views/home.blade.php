@@ -8,6 +8,12 @@
     <title>FSUU Ranking System</title>
 </head>
 <body>
+    <div class="header">
+        <header class="site-header">
+            <img src="{{ asset('Logo/fsuu2_1.png')}}" alt="University Logo" class="logo">
+            <h2 class="site-title">Father Saturnino Urios University</h2>
+        </header>
+    </div>
     <div class="nav-header">
         <h1>S.Y. 2023-2024 Ranking System</h1>
             <div class="name-date">

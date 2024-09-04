@@ -18,8 +18,73 @@
     <br>
 
     <div class="title-header">
-        <h1>S.Y. 2023-2024 Ranking</h1>
-        <h2>Summary</h2>
+        <h1>S.Y. 2023-2024 Ranking Summary</h1>
+        <br>
+        <div class="name-office">
+            <div class="name-only">
+                <legend>Name:</legend>
+            </div>
+            <div class="office-only">
+                <legend>Office:</legend>
+            </div>
+        </div>
+    </div>
+
+    <div class="first-container">
+        <div class="academic-area">
+            <legend class="academic">Academic Attainment</legend>
+            <ol>
+                <li>Bachelor of Arts in Philippine Literature</li>
+                <li>Master of Arts</li>
+            </ol>
+        </div>
+        <div class="years-area">
+            <legend class="years">Years of Experience (FSUU)</legend>
+            <ul>
+                <li>4 years</li>
+            </ul>
+        </div>
+        <div class="rank-area">
+            <legend class="ranks">Rank:</legend>
+            <ul>
+                <li>Teacher 2</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="second-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ranking Criteria</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A. Efficiency Rating</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Productive Scholarship</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>C. Experience</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>D. Community Extension Services</td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total (Max of 70 pts)</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
     </div>
 </body>
 </html>

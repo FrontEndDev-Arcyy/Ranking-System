@@ -49,3 +49,67 @@ body {
     place-items: center;
     margin-bottom: 30px;
 }
+
+legend {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.5em; /* Increase font size */
+}
+
+.name-office {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-only, .office-only {
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.first-container {
+    max-width: 1500px; /* Increased from 800px */
+    width: 95%; /* Added to ensure some margin on very wide screens */
+    margin: auto auto 10px auto;
+    padding: 30px; /* Increased from 20px for more internal space */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.academic, .years, .ranks {
+    font-size: 1.5em; /* Increase font size */
+    margin-bottom: 15px; /* Space below legend */
+}
+
+.academic-area, .years-area, .rank-area {
+    flex: 1 1 1 50%;
+    margin: 0 0 10px 0;
+}
+
+.second-container {
+    max-width: 1500px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2EA2F1;
+}
+
+/* Styles for the table */
+.second-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.second-container th, .second-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.second-container th {
+    background-color: #f2f2f2;
+}

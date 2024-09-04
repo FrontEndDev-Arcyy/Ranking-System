@@ -1,0 +1,51 @@
+* Styling directly in Blade for the header, logo, and text */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.header {
+    padding: 10px 20px;
+    background-color: #007BFF;
+}
+
+.site-header {
+    display: flex;           /* Flexbox for horizontal alignment */
+    align-items: center;     /* Vertically center logo and text */
+}
+
+.logo {
+    width: 50px;             /* Adjust logo size */
+    height: auto;            /* Maintain logo aspect ratio */
+    margin-right: 10px;      /* Space between logo and text */
+}
+
+.site-title {
+    color: black;          /* White text color */
+    font-size: 24px;         /* Font size */
+    margin: 0;               /* Remove default margin from h1 */
+}
+
+.title-header {
+    max-width: 1500px; /* Increased from 800px */
+    width: 95%; /* Added to ensure some margin on very wide screens */
+    margin: 0 auto;
+    padding: 30px; /* Increased from 20px for more internal space */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title-header h1 {
+    display: grid;
+    place-items: center;
+    margin-bottom: 30px;
+}
+
+.title-header h2 {
+    display: grid;
+    place-items: center;
+    margin-bottom: 30px;
+}

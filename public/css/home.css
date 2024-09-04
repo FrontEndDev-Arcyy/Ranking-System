@@ -1,0 +1,511 @@
+* {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-header {
+    max-width: 1500px; /* Increased from 800px */
+    width: 95%; /* Added to ensure some margin on very wide screens */
+    margin: 0 auto;
+    padding: 30px; /* Increased from 20px for more internal space */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-header h1 {
+    display: grid;
+    place-items: center;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid skyblue;
+    border-radius: 4px;
+}
+
+input[type="date"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid skyblue;
+    border-radius: 4px;
+}
+
+.name-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-group,
+.form-group {
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.date-group {
+    width: 30%;
+}
+
+
+
+.container {
+    max-width: 1500px; /* Increased from 800px */
+    width: 95%; /* Added to ensure some margin on very wide screens */
+    margin: 0 auto;
+    background-color: #2EA2F1;
+    padding: 30px; /* Increased from 20px for more internal space */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.first-table {
+    width: 100%;
+    border-collapse: separate; /* Changed from collapse */
+    border-spacing: 0;
+    margin-top: 20px;
+}
+
+.first-table legend {
+    font-size: 1.4em; /* Increased from 1.2em */
+    font-weight: bold;
+    margin-bottom: 15px; /* Increased from 10px */
+    color: #333;
+}
+
+.first-table th,
+.first-table td {
+    padding: 15px; /* Increased from 12px */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.first-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    color: #333;
+}
+
+.first-table tr:last-child td {
+    border-bottom: none;
+}
+
+.first-table select {
+    width: 100%;
+    padding: 10px; /* Increased from 8px */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px; /* Increased from 14px */
+    color: #333;
+}
+
+.first-table select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.first-table td:last-child {
+    font-weight: normal;
+    color: #333;
+}
+
+.first-table ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.first-table li {
+    margin-bottom: 8px; /* Increased from 5px */
+    line-height: 1.4; /* Added for better readability */
+}
+
+.first-table li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .first-table th,
+    .first-table td {
+        padding: 10px;
+    }
+
+    .first-table select {
+        font-size: 14px;
+    }
+
+    .first-table ul {
+        padding-left: 15px;
+    }
+
+    .first-table li {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .first-table th,
+    .first-table td {
+        padding: 8px;
+    }
+
+    .first-table select,
+    .first-table li {
+        font-size: 12px;
+    }
+}
+
+.second-container {
+    max-width: 1500px; /* Increased from 800px */
+    width: 95%; /* Added to ensure some margin on very wide screens */
+    margin: 0 auto;
+    background-color: #2EA2F1;
+    padding: 30px; /* Increased from 20px for more internal space */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Legend Style */
+.second-container legend {
+    font-size: 1.5em; /* Increase font size */
+    margin-bottom: 15px; /* Space below legend */
+}
+
+/* Form Styles */
+.second-container form {
+    display: flex; /* Flexbox for horizontal layout */
+    margin-bottom: 15px; /* Space below each form */
+}
+
+/* Input Field Styles */
+.second-container input[type="text"] {
+    flex: 1; /* Take available space */
+    padding: 10px; /* Inside padding */
+    border: 1px solid #ccc; /* Border around the input */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1em; /* Standard font size */
+    margin-right: 10px; /* Space between input and button */
+}
+
+/* Button Styles */
+.second-container button {
+    padding: 10px 15px; /* Inside padding */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Button Hover Effect */
+.second-container button:hover {
+    background-color: #0056b3; /* Darker blue when hovered */
+}
+
+/* List Styles */
+.second-container ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+}
+
+/* List Item Styles */
+.second-container li {
+    margin-bottom: 10px; /* Space between list items */
+    padding: 10px; /* Inside padding */
+    background-color: #e9ecef; /* Light grey background for list items */
+    border-radius: 4px; /* Rounded corners for list items */
+    display: flex; /* Flexbox for item layout */
+    justify-content: space-between; /* Space between edit and delete forms */
+}
+
+/* Edit and Delete Button Styles */
+.second-container form button {
+    background-color: #28a745; /* Green for edit button */
+    margin-right: 5px; /* Space between buttons */
+}
+
+.second-container form button:nth-of-type(2) {
+    background-color: #dc3545; /* Red for delete button */
+}
+
+.second-container form button:nth-of-type(2):hover {
+    background-color: #c82333; /* Darker red when hovered */
+}
+
+.second-container table th{
+    border: 1px solid black;
+}
+
+.third-container {
+    max-width: 1500px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2EA2F1;
+}
+
+/* Styles for the table */
+.third-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.third-container th, .third-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.third-container th {
+    background-color: #f2f2f2;
+}
+
+/* Button styles */
+.third-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.third-container button:hover {
+    background-color: #45a049;
+}
+
+.third-container input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.third-container input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.fourth-container {
+    max-width: 1500px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2EA2F1;
+}
+
+/* Styles for the table */
+.fourth-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.fourth-container th, .fourth-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.fourth-container th {
+    background-color: #f2f2f2;
+}
+
+/* Button styles */
+.fourth-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.fourth-container button:hover {
+    background-color: #45a049;
+}
+
+.fourth-container input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fourth-container input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fifth-container {
+    max-width: 1500px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2EA2F1;
+}
+
+/* Styles for the table */
+.fifth-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.fifth-container th, .fifth-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.fifth-container th {
+    background-color: #f2f2f2;
+}
+
+/* Button styles */
+.fifth-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.fifth-container button:hover {
+    background-color: #45a049;
+}
+
+.fifth-container input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fifth-container input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sixth-container {
+    max-width: 1500px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2EA2F1;
+}
+
+/* Styles for the table */
+.sixth-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sixth-container th, .sixth-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.sixth-container th {
+    background-color: #f2f2f2;
+}
+
+/* Button styles */
+.sixth-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.sixth-container button:hover {
+    background-color: #45a049;
+}
+
+.sixth-container input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sixth-container input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.last-container {
+    max-width: 1500px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2EA2F1;
+}
+
+/* Styles for the table */
+.last-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.last-container th, .last-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.last-container th {
+    background-color: #f2f2f2;
+}
+
+/* Button styles */
+.last-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.last-container button:hover {
+    background-color: #45a049;
+}
+
+.last-container input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.last-container input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.done-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#button {
+    background-color: skyblue;
+    width: 100px;
+    height: 50px;
+}

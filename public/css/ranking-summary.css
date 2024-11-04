@@ -16,6 +16,7 @@ body {
 .site-header {
     display: flex;           /* Flexbox for horizontal alignment */
     align-items: center;     /* Vertically center logo and text */
+    justify-content: space-between;
 }
 
 .logo {
@@ -28,6 +29,10 @@ body {
     color: black;          /* White text color */
     font-size: 24px;         /* Font size */
     margin: 0;               /* Remove default margin from h1 */
+}
+
+.btn-primary {
+    margin-left: auto;
 }
 
 .title-header {

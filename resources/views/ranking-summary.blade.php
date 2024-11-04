@@ -12,6 +12,7 @@
         <header class="site-header">
             <img src="{{ asset('Logo/fsuu2_1.png')}}" alt="University Logo" class="logo">
             <h2 class="site-title">Father Saturnino Urios University</h2>
+            <a href="{{ route('generate.ranking.summary.pdf') }}" class="btn-primary">Generate PDF</a>
         </header>
     </div>
 
@@ -66,7 +67,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Productive Scholarship</td>
+                    <td>B. Productive Scholarship</td>
                     <td></td>
                 </tr>
                 <tr>

@@ -15,6 +15,7 @@
         </header>
     </div>
     <div class="nav-header">
+        <form action="">
         <h1>S.Y. 2023-2024 Ranking System</h1>
             <div class="name-date">
                 <div class="name-group">
@@ -31,6 +32,7 @@
                 <label for="office">Office Place:</label>
                 <input type="text" id="office" name="office">
             </div>
+            </form>
     </div>
 
     &nbsp;
@@ -121,7 +123,7 @@
         @endif
 
         &nbsp;
-        <legend>B. Performance (35 points)</legend>
+        <legend>B. Performance</legend>
         <table>
             <thead>
                 <tr>
@@ -130,7 +132,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>*</td>
+                    <td><input type="number"></td>
                 </tr>
             </tbody>
         </table>
@@ -141,23 +143,50 @@
 
     <div class="third-container"><h2>C. Productive Scholarship</h2><br>
         <legend>C.1 Seminar</legend>
-        <table>
+        <table class="seminar-table">
             <thead>
                 <tr>
-                    <td>Documents</td>
-                    <td>Topic</td>
-                    <td>No. of days</td>
-                    <td>Inclusive Dates</td>
-                    <td>Points</td>
+                    <th>Documents</th>
+                    <th>Topic</th>
+                    <th>No. of days</th>
+                    <th>Inclusive Dates</th>
+                    <th>Points</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>*</td>
-                    <td>*</td>
-                    <td>*</td>
-                    <td>*</td>
-                    <td>*</td>
+                    <td>
+                        <select name="choices" id="option">
+                            <option value="certificate">Certificate</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                    <td><select name="certificate" id="title">
+                        <option value="select-title">Select Title</option>
+                        <option value="title-1">Identifying Psychosocial Support in the Workplace</option>
+                        <option value="title-2">Webinar: Psychological First Aid: Supporting yourself and others in the now normal</option>
+                        </select>
+                    </td>
+                    <td><input type="number" id="days"></td>
+                    <td><input type="date" id="dates"></td>
+                    <td><input type="number" id="points"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="choices" id="option">
+                            <option value="certificate">Certificate</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                    <td><select name="certificate" id="title">
+                        <option value="select-title">Select Title</option>
+                        <option value="title-1">Identifying Psychosocial Support in the Workplace</option>
+                        <option value="title-2">Webinar: Psychological First Aid: Supporting yourself and others in the now normal</option>
+                        </select>
+                    </td>
+                    <td><input type="number" id="days"></td>
+                    <td><input type="date" id="dates"></td>
+                    <td><input type="number" id="points"></td>
                 </tr>
             </tbody>
             <tfoot>
@@ -172,28 +201,27 @@
         <br>
 
         <legend>C.2 Honors and Awards</legend>
-        <table>
+        <div class="action-buttons">
+            <button onclick="addRow()">Add Row</button>
+            <button onclick="deleteLastRow()">Delete Last Row</button>
+        </div>
+        <table id="honorsTable">
             <thead>
                 <tr>
-                    <td>Documents</td>
-                    <td>Title</td>
-                    <td>Sponsor</td>
-                    <td>Points</td>
+                    <th>Documents</th>
+                    <th>Title</th>
+                    <th>Sponsor</th>
+                    <th>Points</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>*</td>
-                    <td>*</td>
-                    <td>*</td>
-                    <td>*</td>
-                </tr>
+            <tbody id="tableBody">
+                <!-- Rows will be added dynamically -->
             </tbody>
             <tfoot>
                 <tr>
                     <td>Sub-Total</td>
                     <td colspan="2"></td>
-                    <td></td>
+                    <td id="subTotal">0</td>
                 </tr>
             </tfoot>
         </table>
@@ -389,7 +417,7 @@
     </div>
 
     &nbsp;
-    <div class="fifth-container"><h2>D. Years of Experience (FSUU) (10 points)</h2><br>
+    <div class="fifth-container"><h2>D. Years of Experience (FSUU)</h2><br>
         <table>
             <thead>
                 <tr>
@@ -399,12 +427,29 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>*</td>
-                    <td>*</td>
+                    <td>
+                        <select name="year" id="year-choice">
+                            <option value="">Select Year</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </td>
+                    <td id="points-display">-</td>
                 </tr>
             </tbody>
         </table>        
     </div>
+    
 
     &nbsp;
     <div class="sixth-container"><h2>E. Community Extension Points</h2><br>
@@ -702,4 +747,72 @@
         <a href="{{ url('/ranking-summary')}}"><button id="button">Done</button></a>
     </div>
 </body>
+
+<script>
+
+function addRow() {
+            const tbody = document.getElementById('tableBody');
+            const newRow = tbody.insertRow();
+            for (let i = 0; i < 4; i++) {
+                let cell = newRow.insertCell(i);
+                let input = document.createElement('input');
+                input.type = 'text';
+                if (i === 3) { // Points column
+                    input.type = 'number';
+                    input.step = '0.01';
+                    input.onchange = updateSubTotal;
+                }
+                cell.appendChild(input);
+            }
+            updateSubTotal();
+        }
+
+        function deleteLastRow() {
+            const tbody = document.getElementById('tableBody');
+            if (tbody.rows.length > 0) {
+                tbody.deleteRow(-1);
+                updateSubTotal();
+            }
+        }
+
+        function updateSubTotal() {
+            const tbody = document.getElementById('tableBody');
+            let total = 0;
+            for (let i = 0; i < tbody.rows.length; i++) {
+                let pointsInput = tbody.rows[i].cells[3].querySelector('input');
+                total += Number(pointsInput.value) || 0;
+            }
+            document.getElementById('subTotal').textContent = total.toFixed(2);
+        }
+
+        // Initialize with one row
+        addRow();
+        
+    const yearToPoints = {
+            1: 0.83,
+            2: 1.666,
+            3: 2.499,
+            4: 3.332,
+            5: 4.165,
+            6: 4.998,
+            7: 5.831,
+            8: 6.664,
+            9: 7.497,
+            10: 8.33,
+            11: 9.163,
+            12: 10.00
+        };
+
+        const yearSelect = document.getElementById('year-choice');
+        const pointsDisplay = document.getElementById('points-display');
+
+        yearSelect.addEventListener('change', function() {
+            const selectedYear = this.value;
+            if (selectedYear in yearToPoints) {
+                pointsDisplay.textContent = yearToPoints[selectedYear].toFixed(3);
+            } else {
+                pointsDisplay.textContent = '-';
+            }
+        });
+</script>
 </html>

@@ -296,34 +296,38 @@ input[type="date"] {
     border: 1px solid black;
     padding: 8px;
     text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
 }
 
-.third-container th {
-    background-color: #f2f2f2;
+.seminar-table th:nth-child(1), .seminar-table td:nth-child(1) {
+    width: 40%;
 }
-
-/* Button styles */
-.third-container button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-.third-container button:hover {
-    background-color: #45a049;
-}
-
-.third-container input[type="text"] {
+.seminar-table th:nth-child(2), .seminar-table td:nth-child(2) {
     width: 100%;
-    box-sizing: border-box;
+}
+.seminar-table th:nth-child(3), .seminar-table td:nth-child(3) {
+    width: 30%;
+}
+.seminar-table th:nth-child(4), .seminar-table td:nth-child(4) {
+    width: 30%;
+}
+.seminar-table th:nth-child(5), .seminar-table td:nth-child(5) {
+    width: 25%;
 }
 
-.third-container input[type="number"] {
-    width: 100%;
-    box-sizing: border-box;
+#option, #title, #days, #dates, #points {
+    width: auto;
+    padding: 10px;
+    margin: auto;
 }
+
+.third-container input[type="text"], input[type="number"] {
+    width: 95%;
+    padding: 10px;
+}
+
 
 
 .fourth-container {
@@ -401,28 +405,7 @@ input[type="date"] {
     background-color: #f2f2f2;
 }
 
-/* Button styles */
-.fifth-container button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-}
 
-.fifth-container button:hover {
-    background-color: #45a049;
-}
-
-.fifth-container input[type="text"] {
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.fifth-container input[type="number"] {
-    width: 100%;
-    box-sizing: border-box;
-}
 
 .sixth-container {
     max-width: 1500px;
